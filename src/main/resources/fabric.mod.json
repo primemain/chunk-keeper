@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "chunkkeeper",
+  "version": "${version}",
+  "name": "Chunk Keeper",
+  "description": "Keeps chunks you have already loaded on screen after the server unloads them.",
+  "environment": "client",
+  "license": "CC0-1.0",
+  "entrypoints": {
+    "client": [
+      "com.example.chunkkeeper.ChunkKeeper"
+    ]
+  },
+  "mixins": [
+    "chunkkeeper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
